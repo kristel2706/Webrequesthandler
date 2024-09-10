@@ -43,9 +43,9 @@ def post_response(self, data): #Esta función genera una respuesta en formato HT
     <h1> POST Response </h1>
     <p> Data Received: {data} </p>
     """
-
 if __name__ == "__main__":
-    print("Starting server")
-    server = HTTPServer(("localhost", 8080), WebRequestHandler)
-    server.serve_forever()
+    print("Starting server on port 8000")
+server = HTTPServer(("localhost", 8000), WebRequestHandler) #SE CAMBIO AL PUERTO 8000 
+server.serve_forever()
+
 
